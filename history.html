@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History and timeline</title>
+  <link rel="stylesheet" href="./history.css">
+  <link href="./bootstap.min.css" rel="stylesheet">
+  <link href="./bootstrap.min.js">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Atma:wght@300;400;500;600;700&family=Edu+AU+VIC+WA+NT+Pre:wght@500&family=Honk&family=Macondo&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Oriya:wght@500&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Rubik+Dirt&family=Rubik+Microbe&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <section class="navbar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header">
+            <div class="logo">REPUBLIC DAY HISTORY AND TIMELINE</div>
+            <button id="btnNav">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+          </div>
+          <div class="side-nav open">
+            <div class="links">
+              <a href="C:\Users\kowsa\OneDrive\Desktop\republic_day\republic-page2.html" class="link active">Events</a>
+              <a href="C:\Users\kowsa\OneDrive\Desktop\republic_day\history.html" class="link">History</a>
+              <a href="C:\Users\kowsa\OneDrive\Desktop\republic_day\images.html" class="link">Republic day images</a>
+              <a href="C:\Users\kowsa\OneDrive\Desktop\republic_day\awards.html" class="link">Awards</a>
+              <a href="./republic_page1.html" class="link">Home</a>
+            </div>
+            <div class="nav-overlay">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<div class='wrapper'>
+  <div class='carousel'>
+    <div class='carousel__item'>
+      <div class='carousel__item-body'>
+        <p class='title'>January 26, 1930 :</p>
+        <p class="para">Indian National Congress declares Purna Swaraj (complete independence) from British rule.</p>
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-body'>
+        <p class='title'>August 15, 1947 :</p>
+        <p class="para">India attains independence from British colonial rule.</p>
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-body'>
+        <p class='title'>August 29, 1947 :</p>
+        <p class="para">A Drafting Committee is appointed with Dr. B.R. Ambedkar as its chairman to draft the Indian Constitution.</p>
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-body'>
+        <p class='title'>November 4, 1947 :</p>
+        <p class="para">The Draft Constitution is prepared and submitted to the Constituent Assembly.</p>
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-body'>
+        <p class='title'>November 26, 1949 :</p>
+        <p class="para">The Indian Constitution is adopted by the Constituent Assembly.</p>
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-body'>
+        <p class='title'>January 24, 1950 :</p>
+        <p class="para">The Constituent Assembly members sign two handwritten copies of the Constitution, one in Hindi and one in English.</p>
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-body'>
+        <p class='title'>January 26, 1950 :</p>
+        <p class="para">The Indian Constitution comes into effect, making India a republic. Dr. Rajendra Prasad becomes the first President of India.</p>
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-body'>
+        <p class='title'>January 26, 1950 :</p>
+        <p class="para">The first Republic Day parade is held at Rajpath, New Delhi.</p>
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-body'>
+        <p class='title'>Every January 26 from 1950 onwards :</p>
+        <p class="para">Republic Day is celebrated annually with grandeur, featuring parades showcasing India's cultural diversity and military strength.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer">
+          <div class="text-center p-3">
+            © 2024 Copyright:
+            <a class="text" href="#">republicday.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded',()=>{
+    const sideNav=document.querySelector('.side-nav');
+    const btnNav=document.querySelector('#btnNav');
+    const overlayScreen=document.querySelector('.nav-overlay');
+
+
+    btnNav.addEventListener('click',()=>{
+      sideNav.classList.add('open');
+    })
+
+    overlayScreen.addEventListener('click',()=>{
+      sideNav.classList.remove('open');
+    })
+  });
+</script>
+</body>
+</html>
